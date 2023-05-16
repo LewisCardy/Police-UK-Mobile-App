@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/lblCrimeForceType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/lblCrimeForceCategory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblCrimeForceOutcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/lblCrimeForceOutcome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/lblCrimeForceType"
+        app:layout_constraintTop_toBottomOf="@+id/lblCrimeForceType" />
+
+    <TextView
+        android:id="@+id/tvCrimeForceType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:text="@string/tvCrimeForceCategory"
+        app:layout_constraintStart_toEndOf="@+id/lblCrimeForceType"
+        app:layout_constraintTop_toTopOf="@+id/lblCrimeForceType"
+        tools:text="burglary" />
+
+    <TextView
+        android:id="@+id/tvCrimeForceOutcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/tvCrimeForceOutcome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblCrimeForceOutcome"
+        app:layout_constraintTop_toTopOf="@+id/lblCrimeForceOutcome"
+        tools:text="Under investigation" />
+
+    <TextView
+        android:id="@+id/lblCrimeForceDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/lblCrimeForceDate"
+        app:layout_constraintEnd_toStartOf="@+id/tvCrimeForceDate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCrimeForceDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@string/tvCrimeForceDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblCrimeForceDate"
+        tools:text="2021-03" />
+</androidx.constraintlayout.widget.ConstraintLayout>

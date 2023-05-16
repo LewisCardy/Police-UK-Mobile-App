@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/resource_navigation"
+    app:startDestination="@id/landingPage">
+    <fragment
+        android:id="@+id/landingPage"
+        android:name="com.uk.policeapp.landingPage"
+        android:label="landingPage">
+        <action
+            android:id="@+id/action_landingPage_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_landingPage_to_crimeForce"
+            app:destination="@id/crimeForce" />
+        <action
+            android:id="@+id/action_landingPage_to_nearestStation"
+            app:destination="@id/nearestStation" />
+        <action
+            android:id="@+id/action_landingPage_to_crimeLocationInput"
+            app:destination="@id/crimeLocationInput" />
+        <action
+            android:id="@+id/action_landingPage_to_crimeForceInput"
+            app:destination="@id/crimeForceInput" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.uk.policeapp.aboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/crimeForce"
+        android:name="com.uk.policeapp.crimeForce"
+        android:label="fragment_crime_force"
+        tools:layout="@layout/fragment_crime_force" />
+    <fragment
+        android:id="@+id/nearestStation"
+        android:name="com.uk.policeapp.nearestStation"
+        android:label="fragment_nearest_station"
+        tools:layout="@layout/fragment_nearest_station" />
+    <fragment
+        android:id="@+id/crimeLocationInput"
+        android:name="com.uk.policeapp.crimeLocationInput"
+        android:label="fragment_crime_location_input" >
+        <action
+            android:id="@+id/action_crimeLocationInput_to_crimeLocation"
+            app:destination="@id/crimeLocation" />
+    </fragment>
+    <fragment
+        android:id="@+id/crimeLocation"
+        android:name="com.uk.policeapp.crimeLocationFragment"
+        android:label="fragment_crime_location"
+        tools:layout="@layout/fragment_crime_location" >
+        <argument
+            android:name="latitude"
+            app:argType="float" />
+        <argument
+            android:name="longitude"
+            app:argType="float" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="category"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/crimeForceInput"
+        android:name="com.uk.policeapp.crimeForceInput"
+        android:label="fragment_crime_location_input"
+        tools:layout="@layout/fragment_crime_location_input" />
+</navigation>

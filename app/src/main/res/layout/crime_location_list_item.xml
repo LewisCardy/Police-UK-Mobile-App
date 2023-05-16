@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/lblCrimeLocationType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/lblCrimeLocationCategory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblCrimeLocationOutcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/lblCrimeLocationOutcome"
+        app:layout_constraintStart_toStartOf="@+id/lblCrimeLocationType"
+        app:layout_constraintTop_toBottomOf="@+id/lblCrimeLocationType" />
+
+    <TextView
+        android:id="@+id/lblCrimeLocationStreetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/lblCrimeLocationStreetName"
+        app:layout_constraintStart_toStartOf="@+id/lblCrimeLocationOutcome"
+        app:layout_constraintTop_toBottomOf="@+id/lblCrimeLocationOutcome" />
+
+    <TextView
+        android:id="@+id/tvCrimeLocationCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:text="@string/tvCrimeLocationCategory"
+        app:layout_constraintStart_toEndOf="@+id/lblCrimeLocationType"
+        app:layout_constraintTop_toTopOf="@+id/lblCrimeLocationType"
+        tools:text="violent-crime" />
+
+    <TextView
+        android:id="@+id/tvCrimeLocationOutcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/tvCrimeLocationOutcome"
+        app:layout_constraintStart_toEndOf="@+id/lblCrimeLocationOutcome"
+        app:layout_constraintTop_toTopOf="@+id/lblCrimeLocationOutcome"
+        tools:text="Unable to prosecute suspect" />
+
+    <TextView
+        android:id="@+id/tvCrimeLocationStreetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:text="@string/tvCrimeLocationStreetName"
+        app:layout_constraintStart_toEndOf="@+id/lblCrimeLocationStreetName"
+        app:layout_constraintTop_toTopOf="@+id/lblCrimeLocationStreetName"
+        tools:text="On or near Abbey Gate" />
+
+    <TextView
+        android:id="@+id/tvCrimeLocationLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/lblCrimeLocationLongitude"
+        app:layout_constraintStart_toEndOf="@+id/tvCrimeLocationLatitude"
+        app:layout_constraintTop_toTopOf="@+id/tvCrimeLocationLatitude" />
+
+    <TextView
+        android:id="@+id/lblCrimeLocationLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/lblCrimeLocationLatitude"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblCrimeLocationStreetName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvCrimeLocationLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tvCrimeLocationLatitude"
+        app:layout_constraintStart_toEndOf="@+id/tvCrimeLocationStreetName"
+        app:layout_constraintTop_toBottomOf="@+id/tvCrimeLocationStreetName"
+        tools:text="-1.143042" />
+
+    <TextView
+        android:id="@+id/tvCrimeLocationLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/tvCrimeLocationLatitude"
+        app:layout_constraintStart_toEndOf="@+id/lblCrimeLocationLatitude"
+        app:layout_constraintTop_toTopOf="@+id/lblCrimeLocationLatitude"
+        tools:text="52.643950" />
+</androidx.constraintlayout.widget.ConstraintLayout>

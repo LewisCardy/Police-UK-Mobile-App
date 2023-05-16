@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nearestStation" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvNeighbourhood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvNeighbourhood"
+                app:layout_constraintEnd_toEndOf="@+id/btnSearchStation"
+                app:layout_constraintStart_toStartOf="@+id/btnSearchStation"
+                app:layout_constraintTop_toBottomOf="@+id/btnSearchStation"
+                tools:text="NC04" />
+
+            <Button
+                android:id="@+id/btnGetGpsStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#122BB6"
+                android:text="@string/btnGetGps"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lblWebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/lblWebsite"
+                app:layout_constraintStart_toStartOf="@+id/lblContact"
+                app:layout_constraintTop_toBottomOf="@+id/lblContact" />
+
+            <Button
+                android:id="@+id/btnSearchStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:backgroundTint="#122BB6"
+                android:text="@string/btnSearch"
+                app:layout_constraintStart_toEndOf="@+id/btnGetGpsStation"
+                app:layout_constraintTop_toTopOf="@+id/btnGetGpsStation" />
+
+            <TextView
+                android:id="@+id/lblEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/lblEmail"
+                app:layout_constraintStart_toStartOf="@+id/lblWebsite"
+                app:layout_constraintTop_toBottomOf="@+id/lblWebsite" />
+
+            <TextView
+                android:id="@+id/tvWebsite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="@string/tvWebsite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/lblWebsite"
+                app:layout_constraintTop_toTopOf="@+id/lblWebsite"
+                tools:text="http://www.leics.police.uk/local-policing/city-centre" />
+
+            <TextView
+                android:id="@+id/tvPostcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvPostcode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/lblPostcode"
+                app:layout_constraintTop_toTopOf="@+id/lblPostcode"
+                tools:text="LE1 3GG" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/lblAddress"
+                app:layout_constraintTop_toTopOf="@+id/lblAddress"
+                tools:text="74 Belgrave Gate" />
+
+            <TextView
+                android:id="@+id/lblAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/lblAddress"
+                app:layout_constraintStart_toStartOf="@+id/lblStationName"
+                app:layout_constraintTop_toBottomOf="@+id/lblStationName" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="@string/tvEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/lblEmail"
+                app:layout_constraintTop_toTopOf="@+id/lblEmail"
+                tools:text="centralleicester.npa@leicestershire.pnn.police.uk" />
+
+            <TextView
+                android:id="@+id/tvForce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvForce"
+                app:layout_constraintEnd_toEndOf="@+id/btnGetGpsStation"
+                app:layout_constraintStart_toStartOf="@+id/btnGetGpsStation"
+                app:layout_constraintTop_toBottomOf="@+id/btnGetGpsStation"
+                tools:text="leicestershire" />
+
+            <TextView
+                android:id="@+id/lblType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="40dp"
+                android:text="@string/lblType"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/lblPostcode"
+                app:layout_constraintTop_toBottomOf="@+id/lblPostcode" />
+
+            <TextView
+                android:id="@+id/lblStationName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/lblStationName"
+                app:layout_constraintStart_toStartOf="@+id/lblEmail"
+                app:layout_constraintTop_toBottomOf="@+id/lblEmail" />
+
+            <TextView
+                android:id="@+id/lblContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/lblContact"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/btnGetGpsStation"
+                app:layout_constraintTop_toBottomOf="@+id/tvForce" />
+
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:text="@string/tvType"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/lblType"
+                app:layout_constraintTop_toTopOf="@+id/lblType"
+                tools:text="Station" />
+
+            <TextView
+                android:id="@+id/lblPostcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/lblPostcode"
+                app:layout_constraintStart_toStartOf="@+id/lblAddress"
+                app:layout_constraintTop_toBottomOf="@+id/lblAddress" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvStationName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/lblStationName"
+                app:layout_constraintTop_toTopOf="@+id/lblStationName"
+                tools:text="Mansfield House" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

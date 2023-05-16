@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".crimeForceInput" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvLongitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/tvLongitude"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tvLatitude"
+                app:layout_constraintTop_toBottomOf="@+id/tvLatitude" />
+
+            <Spinner
+                android:id="@+id/spCrimeType"
+                android:layout_width="193dp"
+                android:layout_height="48dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCrimeLocationType"
+                app:layout_constraintEnd_toEndOf="@+id/etDate"
+                app:layout_constraintTop_toTopOf="@+id/tvCrimeLocationType" />
+
+            <Button
+                android:id="@+id/btnGetGpsCrimeLocation"
+                android:layout_width="143dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#122BB6"
+                android:text="@string/btnGetGps"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spCrimeType" />
+
+            <EditText
+                android:id="@+id/etDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCrimeLocationDate"
+                app:layout_constraintEnd_toEndOf="@+id/etLongitude"
+                app:layout_constraintTop_toTopOf="@+id/tvCrimeLocationDate"
+                tools:text="@string/etDate" />
+
+            <EditText
+                android:id="@+id/etLongitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned"
+                android:minHeight="48dp"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvLongitude"
+                app:layout_constraintEnd_toEndOf="@+id/etLatitude"
+                app:layout_constraintTop_toTopOf="@+id/tvLongitude" />
+
+            <TextView
+                android:id="@+id/tvCrimeLocationType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/tvCrimeType"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tvCrimeLocationDate"
+                app:layout_constraintTop_toBottomOf="@+id/tvCrimeLocationDate" />
+
+            <EditText
+                android:id="@+id/etLatitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned"
+                android:minHeight="48dp"
+                android:textAlignment="textStart"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvLatitude"
+                app:layout_constraintStart_toEndOf="@+id/tvLatitude"
+                app:layout_constraintTop_toTopOf="@+id/tvLatitude" />
+
+            <TextView
+                android:id="@+id/tvCrimeLocationDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/tvDate"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tvLongitude"
+                app:layout_constraintTop_toBottomOf="@+id/tvLongitude" />
+
+            <TextView
+                android:id="@+id/tvLatitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+
+                android:layout_marginTop="50dp"
+                android:text="@string/tvLatitude"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnSearchLocationCrime"
+                android:layout_width="225dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="#122BB6"
+                android:text="@string/btnSearchLocationCrime"
+                android:textSize="20sp"
+                app:cornerRadius="20sp"
+                app:icon="@drawable/ic_crime_location"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnGetGpsCrimeLocation" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

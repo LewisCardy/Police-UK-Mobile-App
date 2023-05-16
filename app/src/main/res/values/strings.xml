@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">Police App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Landing Page -->
+    <string name="tvCrimeByLocation">Crime By Location</string>
+    <string name="tvNearestStation">Nearest Station</string>
+    <string name="tvCrimeByForce">Crime By Force</string>
+    <string name="tvPoliceForce">Police Force</string>
+    <string name="cdCrimeLocation">Magnifying glass with map marker</string>
+    <string name="cdCrimeForce">Magnifying glass with handcuffs</string>
+    <string name="cdStation">Police station</string>
+    <string name="cdForce">Policeman</string>
+
+    <!-- Crime Force -->
+    <string name="tvSelectForce">Select Force:</string>
+    <string name="btnGetOfficers">Get Officers</string>
+    <string name="btnRedownloadOfficers">Re-Download</string>
+
+    <!-- Crime ForceInput -->
+    <string name="tvSelectCrimeForce">Select Force</string>
+    <string name="btnGetCrimeForce">Search Crimes</string>
+    <string name="btnRedownloadForceCrimes">Re-download</string>
+
+
+
+    <!-- Crime By Location Input -->
+    <string name="tvLongitude">Longitude:</string>
+    <string name="tvLatitude">Latitude:</string>
+    <string name="tvDate">Date:</string>
+    <string name="etDate">MM-YYYY</string>
+    <string name="tvCrimeType">Crime Type:</string>
+    <string name="btnGetGps">Get GPS</string>
+    <string name="btnSearchLocationCrime">Search Crimes</string>
+
+    <!-- Station Strings -->
+    <string name="btnSearch">Search</string>
+    <string name="lblContact">Contact Details:</string>
+    <string name="tvForce"></string>
+    <string name="tvNeighbourhood"></string>
+    <string name="lblWebsite">Website:</string>
+    <string name="tvWebsite"></string>
+    <string name="lblEmail">E-Mail:</string>
+    <string name="tvEmail"></string>
+    <string name="lblStationName">Name:</string>
+    <string name="tvStationName"></string>
+    <string name="lblPostcode">Postcode:</string>
+    <string name="tvPostcode"></string>
+    <string name="lblAddress">Address:</string>
+    <string name="tvAddress"></string>
+    <string name="lblType">Type:</string>
+    <string name="tvType"></string>
+
+    <!-- Crime Force List -->
+    <string name="tvPersonName"></string>
+    <string name="tvPersonRank"></string>
+
+    <!-- Crime Force Location List -->
+    <string name="lblCrimeForceCategory">Type:</string>
+    <string name="tvCrimeForceCategory"></string>
+    <string name="lblCrimeForceOutcome">Outcome:</string>
+    <string name="tvCrimeForceOutcome"></string>
+    <string name="lblCrimeForceDate">Date:</string>
+    <string name="tvCrimeForceDate"></string>
+
+    <!-- Crime Location List -->
+    <string name="lblCrimeLocationCategory">Type:</string>
+    <string name="tvCrimeLocationCategory"></string>
+    <string name="lblCrimeLocationOutcome">Outcome:</string>
+    <string name="tvCrimeLocationOutcome"></string>
+    <string name="lblCrimeLocationStreetName">Location:</string>
+    <string name="tvCrimeLocationStreetName"></string>
+    <string name="lblCrimeLocationLongitude">Longitude:</string>
+    <string name="lblCrimeLocationLatitude">Latitude:</string>
+    <string name="tvCrimeLocationLatitude"></string>
+    <string name="tvCrimeLocationLongitude"></string>
+
+    <!--Crime location-->
+    <string name="btnRedownloadLocationCrimes">Re-download</string>
+    <!-- Bottom Nav Strings -->
+    <string name="homeMenu">Home</string>
+    <string name="aboutMenu">About</string>
+
+    <!-- About Strings -->
+    <string name="tvAbout">About</string>
+    <string name="tvAppDescription">This app lets the user view different information about Police UK. England, Wales Northern ireland Only
+        The app allows users to perform:</string>
+    <string name="tvCrimeLocationAbout">Crime By Location Search - enter a location and view all of the crime that took place over the given month</string>
+    <string name="tvCrimeForceAbout">Crime By Police Force Search - select a police force and view all of the crime that force handled over the latest available month</string>
+    <string name="tvPoliceForceAbout">View Senior Officers Of A Police Force - get the name and rank of senior officers of a given police force</string>
+    <string name="tvNearestStationAbout">Find Nearest police station - get details about you nearest police station using location data</string>
+    <string name="tvApiInfo">For information about the API Visit https://data.police.uk/docs/</string>
+
+    <!-- Volley Error Strings  -->
+    <string name="requestFailed">Error Getting Data From API</string>
+
+    <!--Spinner text for the crime category-->
+    <string-array name="listOfCrimecategories">
+        <item>all-crime</item>
+        <item>anti-social-behaviour</item>
+        <item>bicycle-theft</item>
+        <item>burglary</item>
+        <item>criminal-damage-arson</item>
+        <item>drugs</item>
+        <item>other-theft</item>
+        <item>possession-of-weapons</item>
+        <item>public-order</item>
+        <item>robbery</item>
+        <item>shoplifting</item>
+        <item>theft-from-the-person</item>
+        <item>vehicle-crime</item>
+        <item>violent-crime</item>
+        <item>other-crime</item>
+    </string-array>
+
+    <!--Spinner text for the police force-->
+    <string-array name="ListOfForces">
+        <item>avon-and-somerset</item>
+        <item>bedfordshire</item>
+        <item>cambridgeshire</item>
+        <item>cheshire</item>
+        <item>city-of-london</item>
+        <item>cleveland</item>
+        <item>cumbria</item>
+        <item>derbyshire</item>
+        <item>devon-and-cornwall</item>
+        <item>dorset</item>
+        <item>durham</item>
+        <item>dyfed-powys</item>
+        <item>essex</item>
+        <item>gloucestershire</item>
+        <item>greater-manchester</item>
+        <item>gwent</item>
+        <item>hampshire</item>
+        <item>hertfordshire</item>
+        <item>humberside</item>
+        <item>kent</item>
+        <item>lancashire</item>
+        <item>leicestershire</item>
+        <item>lincolnshire</item>
+        <item>merseyside</item>
+        <item>metropolitan</item>
+        <item>norfolk</item>
+        <item>north-wales</item>
+        <item>north-yorkshire</item>
+        <item>northamptonshire</item>
+        <item>northumbria</item>
+        <item>nottinghamshire</item>
+        <item>northern-ireland</item>
+        <item>south-wales</item>
+        <item>south-yorkshire</item>
+        <item>staffordshire</item>
+        <item>suffolk</item>
+        <item>surrey</item>
+        <item>sussex</item>
+        <item>thames-valley</item>
+        <item>warwickshire</item>
+        <item>west-mercia</item>
+        <item>west-midlands</item>
+        <item>west-yorkshire</item>
+        <item>wiltshire</item>
+    </string-array>
+</resources>

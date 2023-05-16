@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/miBottomNavHome"
+        android:icon="@drawable/ic_home"
+        android:title="@string/homeMenu" />
+    <item
+        android:id="@+id/miBottomNavAbout"
+        android:icon="@drawable/ic_about"
+        android:title="@string/aboutMenu" />
+</menu>
